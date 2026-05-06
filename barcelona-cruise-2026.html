@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ברצלונה ושיט ים תיכוני 2026</title>
+<style>
+:root{--sea:#0a4f6e;--sl:#1a7fa3;--sun:#f0a500;--coral:#e05c3a;--white:#fdfaf5;--dark:#1a1a2e;--text:#2d2d2d;--muted:#666}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,'Segoe UI',Tahoma,sans-serif;background:var(--white);color:var(--text);direction:rtl}
+header{background:linear-gradient(135deg,var(--sea),#0d6b91,var(--sl));color:#fff;padding:32px 20px 26px;text-align:center;position:relative;overflow:hidden}
+header::before{content:'';position:absolute;bottom:-2px;left:0;right:0;height:45px;background:var(--white);clip-path:ellipse(55% 100% at 50% 100%)}
+header h1{font-family:Georgia,serif;font-size:clamp(18px,5vw,32px);text-shadow:0 2px 8px rgba(0,0,0,.3)}
+header .sub{margin-top:8px;font-size:13px;opacity:.85}
+.badges{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:12px}
+.badge{background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);border-radius:20px;padding:4px 12px;font-size:11px}
+.tabs-bar{position:sticky;top:0;z-index:100;background:var(--dark);overflow-x:auto;scrollbar-width:none;box-shadow:0 2px 10px rgba(0,0,0,.3)}
+.tabs-bar::-webkit-scrollbar{display:none}
+.tabs{display:flex;min-width:max-content;padding:0 6px}
+.tb{background:none;border:none;color:rgba(255,255,255,.5);padding:11px 13px;cursor:pointer;font-size:11px;font-weight:500;white-space:nowrap;border-bottom:3px solid transparent;transition:.2s;display:flex;flex-direction:column;align-items:center;gap:2px}
+.tb .ti{font-size:15px}.tb .td{font-size:10px;opacity:.7}
+.tb:hover{color:rgba(255,255,255,.85)}
+.tb.active{color:var(--sun);border-bottom-color:var(--sun);font-weight:700}
+.tab-content{display:none}.tab-content.active{display:block}
+.dw{max-width:900px;margin:0 auto;padding:22px 14px 56px}
+.dh{background:linear-gradient(135deg,var(--sea),var(--sl));color:#fff;border-radius:13px;padding:17px 20px;margin-bottom:20px;display:flex;align-items:center;gap:13px;box-shadow:0 4px 14px rgba(10,79,110,.3)}
+.di{font-size:32px;flex-shrink:0}
+.dh h2{font-family:Georgia,serif;font-size:18px;font-weight:bold}
+.dm{font-size:12px;opacity:.85;margin-top:3px}
+.tip{background:#fff8e6;border-right:4px solid var(--sun);border-radius:8px;padding:11px 14px;margin-bottom:16px;font-size:13px;color:#5a4000;line-height:1.6}
+.tip strong{color:var(--coral)}
+.alert{background:#fff0ed;border-right:4px solid var(--coral);border-radius:10px;padding:13px 15px;margin-bottom:16px;font-size:13px;color:#7a1c00;line-height:1.7}
+.at{font-weight:bold;font-size:14px;color:var(--coral);margin-bottom:5px}
+.tl{position:relative;margin-bottom:26px}
+.ti2{display:flex;gap:13px;align-items:stretch}
+.dc{display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:22px}
+.dot{width:15px;height:15px;border-radius:50%;background:var(--sea);border:3px solid #fff;box-shadow:0 0 0 2px var(--sl);flex-shrink:0;margin-top:17px;z-index:1}
+.ln{width:2px;flex:1;background:linear-gradient(to bottom,var(--sl),#e8d09a)}
+.ti2:last-child .ln{display:none}
+.card{flex:1;background:#fff;border-radius:11px;padding:12px 14px;margin-bottom:9px;box-shadow:0 2px 8px rgba(0,0,0,.07);border:1px solid #eee}
+.tm{font-size:11px;font-weight:bold;color:var(--sl);margin-bottom:3px;direction:ltr;text-align:right;display:inline-block;background:#e8f4fa;padding:2px 7px;border-radius:9px}
+.pl{font-size:15px;font-weight:bold;color:var(--dark);margin-bottom:1px}
+.pe{font-size:11px;color:var(--muted);font-style:italic;margin-bottom:6px}
+.ac{font-size:13px;color:var(--text);line-height:1.5;margin-bottom:8px}
+.meta{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-top:7px;padding-top:7px;border-top:1px dashed #eee}
+.tr{display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:11px;font-size:11px;font-weight:bold}
+.tw{background:#e8f5e9;color:#2e7d32}.tx{background:#fff3e0;color:#e65100}.tt{background:#e3f2fd;color:#1565c0}
+.ts{background:#f3e5f5;color:#6a1b9a}.tp{background:#fce4ec;color:#880e4f}.tm2{background:#e8eaf6;color:#283593}.th{background:#e0f2f1;color:#00695c}
+.nl{display:inline-flex;align-items:center;gap:4px;background:var(--sea);color:#fff;text-decoration:none;padding:4px 10px;border-radius:11px;font-size:11px;font-weight:bold}
+.nl:hover{background:var(--sl)}
+.di2{font-size:11px;color:var(--muted)}
+.st{font-family:Georgia,serif;font-size:18px;font-weight:bold;color:var(--sea);margin-bottom:13px;display:flex;align-items:center;gap:9px;padding-top:5px}
+.st::after{content:'';flex:1;height:2px;background:linear-gradient(to left,transparent,#e8d09a)}
+.rg{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:12px;margin-bottom:14px}
+.rc{background:#fff;border-radius:12px;padding:14px;box-shadow:0 2px 9px rgba(0,0,0,.08);border:1px solid #eee}
+.rt{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px}
+.rn{font-size:14px;font-weight:bold;color:var(--dark)}
+.tag{font-size:10px;font-weight:bold;padding:3px 7px;border-radius:7px;white-space:nowrap}
+.t1{background:var(--sea);color:#fff}.t2{background:#eaf5ea;color:#2d7a2d;border:1px solid #2d7a2d}
+.t3{background:#f0f7e8;color:#5a9e2f;border:1px solid #5a9e2f}.t4{background:#fef7e6;color:#c47a00;border:1px solid #c47a00}.t5{background:#f0f0f0;color:#555}
+.rtype{font-size:11px;color:var(--muted);font-style:italic;margin-bottom:5px}
+.rdesc{font-size:12px;line-height:1.6;margin-bottom:7px}
+.rprice{font-size:12px;font-weight:bold;color:var(--coral)}
+.rkn{font-size:11px;background:#eaf5ea;color:#2d7a2d;padding:5px 9px;border-radius:7px;margin-top:6px}
+.rnl{display:inline-flex;align-items:center;gap:4px;background:#f0f7ff;color:var(--sea);text-decoration:none;padding:4px 9px;border-radius:9px;font-size:11px;font-weight:bold;margin-top:6px}
+.sc{background:linear-gradient(135deg,#0a4f6e,#1a7fa3);color:#fff;border-radius:13px;padding:24px;text-align:center;margin-bottom:20px}
+.sc h3{font-family:Georgia,serif;font-size:19px;margin-bottom:9px}
+.sc p{font-size:13px;opacity:.9;line-height:1.8}
+.sa{display:flex;justify-content:center;gap:11px;flex-wrap:wrap;margin-top:13px}
+.sai{background:rgba(255,255,255,.15);border-radius:9px;padding:8px 13px;font-size:13px;font-weight:bold}
+.sum{background:#fff;border-radius:12px;padding:17px;box-shadow:0 2px 11px rgba(0,0,0,.08);margin-bottom:16px;overflow-x:auto}
+.sum table{width:100%;border-collapse:collapse;font-size:13px}
+.sum th{background:var(--sea);color:#fff;padding:9px 10px;text-align:right;font-weight:bold}
+.sum td{padding:9px 10px;border-bottom:1px solid #f0f0f0}
+.sum tr:last-child td{border-bottom:none}
+.sum tr:nth-child(even) td{background:#f9f9f9}
+.pt{background:var(--sea);color:#fff;padding:13px 17px;border-radius:9px;margin-top:9px;font-weight:bold;font-size:14px;text-align:center}
+.fc{background:var(--dark);color:#fff;border-radius:12px;padding:17px;margin-bottom:13px;display:flex;align-items:center;gap:16px}
+.fi{font-size:36px}
+.fd h4{font-size:15px;font-weight:bold;margin-bottom:5px}
+.fd p{font-size:12px;opacity:.8;line-height:1.7}
+.cl{display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:8px;margin-top:9px}
+.ci{display:flex;align-items:center;gap:8px;background:#fff;border-radius:9px;padding:9px 12px;box-shadow:0 1px 5px rgba(0,0,0,.06);font-size:13px;cursor:pointer;border:1px solid #eee}
+.ci input{width:16px;height:16px;cursor:pointer;accent-color:var(--sea)}
+.ci.chk{opacity:.55;text-decoration:line-through}
+@media(max-width:600px){.rg{grid-template-columns:1fr}.dh{flex-direction:column;gap:7px;text-align:center}.cl{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<div style="font-size:28px;margin-bottom:9px">✈️ 🌊 🚢 ⚓</div>
+<h1>ברצלונה ושיט ים תיכוני</h1>
+<p class="sub">31 יולי – 10 אוגוסט 2026 | 7 אנשים | 2 משפחות</p>
+<div class="badges">
+<span class="badge">✈️ אל על קלאסי</span><span class="badge">🚢 שיט 8 ימים</span>
+<span class="badge">👨‍👩‍👧‍👦 ילדים 12-15</span><span class="badge">🕍 חבר צמחוני</span>
+</div>
+</header>
+
+<div class="tabs-bar"><div class="tabs">
+<button class="tb active" onclick="st('d1',this)"><span class="ti">✈️</span><span>הגעה</span><span class="td">31.07</span></button>
+<button class="tb" onclick="st('d2',this)"><span class="ti">🏛️</span><span>ברצלונה</span><span class="td">01.08</span></button>
+<button class="tb" onclick="st('d3',this)"><span class="ti">🚢</span><span>שיט</span><span class="td">02.08</span></button>
+<button class="tb" onclick="st('d4',this)"><span class="ti">🏝️</span><span>פלמה</span><span class="td">03.08</span></button>
+<button class="tb" onclick="st('d5',this)"><span class="ti">🇫🇷</span><span>מרסיי</span><span class="td">04.08</span></button>
+<button class="tb" onclick="st('d6',this)"><span class="ti">🌊</span><span>יום ים</span><span class="td">05.08</span></button>
+<button class="tb" onclick="st('d7',this)"><span class="ti">🏛️</span><span>רומא</span><span class="td">06.08</span></button>
+<button class="tb" onclick="st('d8',this)"><span class="ti">🍕</span><span>נאפולי</span><span class="td">07.08</span></button>
+<button class="tb" onclick="st('d9',this)"><span class="ti">🌊</span><span>יום ים</span><span class="td">08.08</span></button>
+<button class="tb" onclick="st('d10',this)"><span class="ti">🛍️</span><span>ברצלונה</span><span class="td">09.08</span></button>
+<button class="tb" onclick="st('d11',this)"><span class="ti">🏠</span><span>טיסה</span><span class="td">10.08</span></button>
+<button class="tb" onclick="st('inf',this)"><span class="ti">📋</span><span>מידע</span><span class="td">כללי</span></button>
+</div></div>
+
+<!-- DAY 1 -->
+<div id="d1" class="tab-content active"><div class="dw">
+<div class="dh"><div class="di">✈️</div><div><h2>יום 1 – הגעה לברצלונה</h2><div class="dm">יום שישי, 31 יולי 2026 | מלון לאונרדו לאס רמבלס</div></div></div>
+<div class="alert"><div class="at">⚠️ יום קליל בכוונה</div>הגעה אחרי טיסת לילה עם ילדים – אל תנסו להכניס יותר מדי. גוף עייף + חום אוגוסט + ילדים = קטסטרופה.</div>
+<div class="tl">
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">05:45</div><div class="pl">נמל תעופה בן גוריון</div><div class="pe">Ben Gurion Airport</div><div class="ac">המראה אל על | טיסת לילה | 4 שעות 40 דקות</div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">09:25</div><div class="pl">שדה התעופה ברצלונה</div><div class="pe">Barcelona El Prat Airport (BCN)</div><div class="ac">נחיתה, עבר דרכונים, איסוף 7 מזוודות. קחו בחשבון 40-50 דקות עד היציאה.</div><div class="meta"><span class="di2">🕐 ~45 דק' עד המלון</span></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">10:15</div><div class="pl">נסיעה למלון</div><div class="pe">Transfer to Hotel Leonardo</div><div class="ac">מיניוואן פרטי מוזמן מראש. 7 אנשים + 7 מזוודות – מיניוואן עדיף על כל תחבורה ציבורית.</div><div class="meta"><span class="tr tp">🚐 מיניוואן פרטי</span><span class="di2">~30 דק' | ~70€</span><a class="nl" href="https://www.google.com/maps/dir/Barcelona+El+Prat+Airport/Hotel+Leonardo+Las+Ramblas" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">11:00</div><div class="pl">מלון לאונרדו לאס רמבלס</div><div class="pe">Hotel Leonardo Las Ramblas</div><div class="ac">צ'ק אין או השארת מזוודות. מקלחת, התאוששות. החדר כולל מרפסת.</div><div class="meta"><span class="tr tw">🚶 הגעתם!</span><a class="nl" href="https://www.google.com/maps/search/Hotel+Leonardo+Las+Ramblas+Barcelona" target="_blank">🗺️ מיקום</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">13:00</div><div class="pl">לה רמבלה</div><div class="pe">La Rambla</div><div class="ac">טיול קצר וקליל. סתם ללכת ולספוג את האווירה.</div><div class="meta"><span class="tr tw">🚶 הליכה</span><span class="di2">📍 200מ' מהמלון | 3 דק'</span><a class="nl" href="https://www.google.com/maps/place/La+Rambla,+Barcelona" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">13:30</div><div class="pl">שוק בוקריה</div><div class="pe">Mercat de la Boqueria</div><div class="ac">פירות חתוכים, מיצי תפוזים טריים, גבינות. לאכול במקום – זול ומהיר.</div><div class="meta"><span class="tr tw">🚶 הליכה</span><span class="di2">📍 300מ' | 4 דק'</span><a class="nl" href="https://www.google.com/maps/place/La+Boqueria+Market+Barcelona" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">15:00</div><div class="pl">מנוחת צהריים במלון</div><div class="pe">Hotel Rest</div><div class="ac">מנוחה של 2-3 שעות – חובה עם ילדים אחרי לילה בטיסה ובחום אוגוסט.</div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">19:30</div><div class="pl">הרובע הגותי</div><div class="pe">Barri Gòtic – Gothic Quarter</div><div class="ac">סיור ערב קליל בסמטאות ההיסטוריות. בערב יותר קריר ונעים.</div><div class="meta"><span class="tr tw">🚶 הליכה</span><span class="di2">📍 10 דק' מהמלון</span><a class="nl" href="https://www.google.com/maps/place/Gothic+Quarter+Barcelona" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div></div><div class="card"><div class="tm">21:00</div><div class="pl">ארוחת ערב + חזרה למלון</div><div class="pe">Dinner</div><div class="ac">ראו המלצות מסעדות למטה.</div></div></div>
+</div>
+<div class="st">🍽️ מסעדות – יום 1 | ברצלונה</div>
+<div class="rg">
+<div class="rc"><div class="rt"><div class="rn">Cafè de l'Acadèmia</div><span class="tag t1">⭐ מומלץ</span></div><div class="rtype">קטלוני ביתי | צהריים/ערב</div><div class="rdesc">מסעדה מקומית אמיתית. תפריט צהריים menú del día ב-14-16€ עם מנה ראשונה, עיקרית ושתייה.</div><div class="rprice">💶 15-25€ לאדם</div><div class="rkn">🥗 לחבר הצמחוני: יש מנות צמחוניות</div><a class="rnl" href="https://www.google.com/maps/search/Cafe+de+l'Academia+Barcelona" target="_blank">🗺️ ניווט</a></div>
+<div class="rc"><div class="rt"><div class="rn">Bar del Pla</div><span class="tag t5">🍺 טאפסים</span></div><div class="rtype">טאפסים קטלוניים | ערב</div><div class="rdesc">בר מקומי בלב הרובע הגותי. אווירה אמיתית, לא תיירותית. מנות קטנות וטעימות.</div><div class="rprice">💶 20-30€ לאדם</div><div class="rkn">🥗 יש ירקות, דגים, גבינות</div><a class="rnl" href="https://www.google.com/maps/search/Bar+del+Pla+Barcelona" target="_blank">🗺️ ניווט</a></div>
+<div class="rc"><div class="rt"><div class="rn">La Fonda</div><span class="tag t5">👨‍👩‍👧 משפחתי</span></div><div class="rtype">ספרדי עממי | על הרמבלה</div><div class="rdesc">ממש על הרמבלה, מחירים סבירים. אמין ומתאים עם ילדים עייפים.</div><div class="rprice">💶 15-22€ לאדם</div><div class="rkn">🥗 תפריט נרחב עם דגים וירקות</div><a class="rnl" href="https://www.google.com/maps/search/La+Fonda+Barcelona+Rambla" target="_blank">🗺️ ניווט</a></div>
+<div class="rc"><div class="rt"><div class="rn">דוכני שוק בוקריה</div><span class="tag t4">⚡ מהיר</span></div><div class="rtype">שוק | צהריים</div><div class="rdesc">פירות חתוכים 5-8€, מיצי תפוזים 3€. הכי טעים, הכי זול, הכי מהיר.</div><div class="rprice">💶 8-15€ לאדם</div><div class="rkn">🥗 ✅ מושלם – פירות, ירקות, גבינות</div><a class="rnl" href="https://www.google.com/maps/place/La+Boqueria+Market+Barcelona" target="_blank">🗺️ ניווט</a></div>
+</div>
+</div></div>
+
+<!-- DAY 2 -->
+<div id="d2" class="tab-content"><div class="dw">
+<div class="dh"><div class="di">🏛️</div><div><h2>יום 2 – ברצלונה הקלאסית</h2><div class="dm">שבת, 1 אוגוסט 2026 | גאודי, פארקים, טאפסים</div></div></div>
+<div class="tip">🎟️ <strong>חובה לפני היציאה:</strong> להזמין כרטיסים לסגרדה פמיליה (sagradafamilia.org) ולפארק גואל (parkguell.barcelona). באוגוסט אין כניסה ללא הזמנה!</div>
+<div class="tl">
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">08:30</div><div class="pl">ארוחת בוקר – Federal Café</div><div class="pe">Breakfast</div><div class="ac">בראנץ' מודרני, קרוב למלון, קפה מעולה.</div><div class="meta"><span class="tr tw">🚶 הליכה</span><a class="nl" href="https://www.google.com/maps/search/Federal+Cafe+Barcelona" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">09:30</div><div class="pl">סגרדה פמיליה</div><div class="pe">Sagrada Família</div><div class="ac">האתר הכי מבוקר בספרד. שעתיים לפחות. גאודי התחיל ב-1882 ועדיין לא גמרו. ילדים נדהמים.</div><div class="meta"><span class="tr tx">🚕 מונית/אובר</span><span class="di2">📍 ~3ק"מ | 10 דק' | ~10€</span><a class="nl" href="https://www.google.com/maps/place/Sagrada+Fam%C3%ADlia" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">11:30</div><div class="pl">פארק גואל</div><div class="pe">Park Güell</div><div class="ac">פסיפסים צבעוניים, נוף מדהים. אזור הכניסה בתשלום דורש הזמנה. לקחת מים!</div><div class="meta"><span class="tr tx">🚕 מונית/אובר</span><span class="di2">📍 ~2ק"מ | 8 דק' | ~8€</span><a class="nl" href="https://www.google.com/maps/place/Park+G%C3%BCell" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">13:30</div><div class="pl">שכונת גרסיה – El Glop</div><div class="pe">Gràcia Neighborhood</div><div class="ac">ארוחת צהריים. שקטה יותר מהמרכז, מחירים טובים יותר.</div><div class="meta"><span class="tr tw">🚶 הליכה מהפארק</span><span class="di2">📍 ~10 דק'</span><a class="nl" href="https://www.google.com/maps/search/El+Glop+Barcelona+Gracia" target="_blank">🗺️ El Glop</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">15:30</div><div class="pl">פסאיג דה גרסיה</div><div class="pe">Passeig de Gràcia</div><div class="ac">מבני גאודי מבחוץ – Casa Batlló, Casa Milà. מספיק לצפות ולצלם.</div><div class="meta"><span class="tr tx">🚕 מונית</span><span class="di2">📍 ~1.5ק"מ | 5 דק' | ~6€</span><a class="nl" href="https://www.google.com/maps/place/Passeig+de+Gr%C3%A0cia,+Barcelona" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">17:30</div><div class="pl">פלאסה קטלוניה</div><div class="pe">Plaça de Catalunya</div><div class="ac">הכיכר המרכזית. מנוחה, יונים לילדים, קניות קטנות.</div><div class="meta"><span class="tr tw">🚶 הליכה</span><span class="di2">📍 ~1ק"מ | 12 דק'</span><a class="nl" href="https://www.google.com/maps/place/Pla%C3%A7a+de+Catalunya,+Barcelona" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div></div><div class="card"><div class="tm">20:00</div><div class="pl">ארוחת ערב – Cerveceria Catalana</div><div class="pe">Dinner</div><div class="ac">טאפסים מהטובים בברצלונה. להגיע לפני 20:00 או להזמין – תמיד יש תור.</div><div class="meta"><span class="tr tw">🚶 הליכה מהמלון</span><span class="di2">📍 ~5 דק'</span><a class="nl" href="https://www.google.com/maps/search/Cerveceria+Catalana+Barcelona" target="_blank">🗺️ ניווט</a></div></div></div>
+</div>
+<div class="st">🍽️ מסעדות – יום 2</div>
+<div class="rg">
+<div class="rc"><div class="rt"><div class="rn">Federal Café</div><span class="tag t1">☕ בוקר</span></div><div class="rtype">בראנץ' מודרני</div><div class="rdesc">קפה מעולה, אבוקדו טוסט, ביצים. פופולרי ומשובח.</div><div class="rprice">💶 10-16€ לאדם</div><div class="rkn">🥗 ✅ תפריט ללא בשר</div><a class="rnl" href="https://www.google.com/maps/search/Federal+Cafe+Barcelona" target="_blank">🗺️ ניווט</a></div>
+<div class="rc"><div class="rt"><div class="rn">El Glop</div><span class="tag t1">⭐ מומלץ</span></div><div class="rtype">קטלוני מסורתי | צהריים</div><div class="rdesc">מנות גדולות ומשביעות, מחירים הוגנים. Pa amb tomàquet חינם.</div><div class="rprice">💶 15-22€ לאדם</div><div class="rkn">🥗 מנות ירקות ופסטה</div><a class="rnl" href="https://www.google.com/maps/search/El+Glop+Barcelona+Gracia" target="_blank">🗺️ ניווט</a></div>
+<div class="rc"><div class="rt"><div class="rn">Cerveceria Catalana</div><span class="tag t1">🍺 ערב</span></div><div class="rtype">טאפסים | ערב | פופולרי</div><div class="rdesc">אחת הטאפסיות הטובות. פטאטס בראבאס, קרוקטות. להגיע מוקדם.</div><div class="rprice">💶 25-35€ לאדם</div><div class="rkn">🥗 ירקות, גבינות, ביצים, דגים</div><a class="rnl" href="https://www.google.com/maps/search/Cerveceria+Catalana+Barcelona" target="_blank">🗺️ ניווט</a></div>
+</div>
+</div></div>
+
+<!-- DAY 3 -->
+<div id="d3" class="tab-content"><div class="dw">
+<div class="dh"><div class="di">🚢</div><div><h2>יום 3 – עליה לשיט</h2><div class="dm">ראשון, 2 אוגוסט 2026 | לנמל ברצלונה</div></div></div>
+<div class="alert"><div class="at">⚠️ אל תתכננו כלום רחוק ביום זה</div>יום לוגיסטי בלבד. צ'ק אאוט, מזוודות, נסיעה לנמל.</div>
+<div class="tl">
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">08:30</div><div class="pl">ארוחת בוקר – Granja Viader</div><div class="pe">Last Barcelona Breakfast</div><div class="ac">מוסד ברצלוני מ-1870. שוקו חם ביתי, מאפים טריים. אווירה וינטג' אמיתית.</div><div class="meta"><span class="tr tw">🚶 הליכה</span><span class="di2">📍 5 דק' מהמלון</span><a class="nl" href="https://www.google.com/maps/search/Granja+Viader+Barcelona" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">10:00</div><div class="pl">לה רמבלה – קניות אחרונות</div><div class="pe">La Rambla</div><div class="ac">מגנטים, מזכרות. לא להתרחק יותר מ-15 דקות מהמלון.</div><div class="meta"><span class="tr tw">🚶 הליכה</span></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">11:30</div><div class="pl">מלון לאונרדו – צ'ק אאוט</div><div class="pe">Check Out</div><div class="ac">איסוף מזוודות. לוודא שיש את כל הדרכונים!</div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div></div><div class="card"><div class="tm">12:00</div><div class="pl">נמל ברצלונה</div><div class="pe">Barcelona Cruise Port</div><div class="ac">צ'ק אין לספינה אורך 30-60 דקות. הספינה פתוחה מ-13:00. אוכל כלול בספינה.</div><div class="meta"><span class="tr tp">🚐 מיניוואן פרטי</span><span class="di2">📍 ~3ק"מ | 15 דק' | ~70€</span><a class="nl" href="https://www.google.com/maps/place/Barcelona+Cruise+Port" target="_blank">🗺️ ניווט</a></div></div></div>
+</div>
+</div></div>
+
+<!-- DAY 4 -->
+<div id="d4" class="tab-content"><div class="dw">
+<div class="dh"><div class="di">🏝️</div><div><h2>יום 4 – פלמה דה מיורקה</h2><div class="dm">שני, 3 אוגוסט | עגינה 07:00–17:00 | ~9 שעות</div></div></div>
+<div class="tip">✅ <strong>פלמה קלה לטיול עצמאי</strong> – עיר קומפקטית ובטוחה. ⚠️ <strong>לחזור לספינה עד 16:30</strong></div>
+<div class="tl">
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">07:30</div><div class="pl">יציאה מהספינה</div><div class="pe">Port de Palma</div><div class="ac">הנמל ממש במרכז העיר.</div><div class="meta"><span class="tr tw">🚶 הליכה</span><a class="nl" href="https://www.google.com/maps/place/Port+de+Palma" target="_blank">🗺️ נמל פלמה</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">08:00</div><div class="pl">קתדרלת פלמה – לה סאו</div><div class="pe">La Seu Cathedral</div><div class="ac">אחת הקתדרלות הגותיות היפות בים התיכון. כניסה ~9€. מרשים מבחוץ ומבפנים.</div><div class="meta"><span class="tr tw">🚶 הליכה</span><span class="di2">📍 10 דק' מהנמל</span><a class="nl" href="https://www.google.com/maps/place/Cathedral+of+Palma" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">09:30</div><div class="pl">העיר העתיקה</div><div class="pe">Old Town Palma</div><div class="ac">סמטאות מהמאה ה-14. לקנות ensaïmada (מאפה שקדים מיורקני) מהמאפיות.</div><div class="meta"><span class="tr tw">🚶 הליכה</span><a class="nl" href="https://www.google.com/maps/place/Old+Town+Palma+de+Mallorca" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">11:30</div><div class="pl">מצודת בלוור</div><div class="pe">Castell de Bellver</div><div class="ac">מבצר עגול מהמאה ה-14 – יחיד מסוגו. נוף פנורמי על העיר והים.</div><div class="meta"><span class="tr tx">🚕 מונית/אובר</span><span class="di2">📍 ~3ק"מ | 10 דק' | ~8-10€</span><a class="nl" href="https://www.google.com/maps/place/Bellver+Castle+Palma" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">13:00</div><div class="pl">ארוחת צהריים – Bar España</div><div class="pe">Lunch</div><div class="ac">טאפסים, פאאייה. מחיר הוגן, לא תיירותי.</div><div class="meta"><span class="tr tx">🚕 חזרה למרכז</span><a class="nl" href="https://www.google.com/maps/search/Bar+Espana+Palma+de+Mallorca" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">14:30</div><div class="pl">טיילת הנמל</div><div class="pe">Paseo Marítimo</div><div class="ac">טיול רגוע לאורך הים, גלידה לילדים.</div><div class="meta"><span class="tr tw">🚶 הליכה</span><a class="nl" href="https://www.google.com/maps/place/Paseo+Maritimo+Palma" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div></div><div class="card"><div class="tm">15:45</div><div class="pl">חזרה לספינה</div><div class="pe">Back to Ship</div><div class="ac">מרווח ביטחון של 75 דקות לפני ההפלגה.</div><div class="meta"><span class="tr tw">🚶 הליכה לנמל</span><a class="nl" href="https://www.google.com/maps/place/Port+de+Palma" target="_blank">🗺️ לנמל</a></div></div></div>
+</div>
+<div class="st">🍽️ מסעדות – פלמה</div>
+<div class="rg">
+<div class="rc"><div class="rt"><div class="rn">Bar España</div><span class="tag t1">⭐ מומלץ</span></div><div class="rtype">טאפסים / פאאייה | צהריים</div><div class="rdesc">עממי ואמיתי. פאאייה טובה, קרוקטות. לא תיירותי.</div><div class="rprice">💶 15-25€ לאדם</div><div class="rkn">🥗 סלטים, ירקות קלויים, דגים</div><a class="rnl" href="https://www.google.com/maps/search/Bar+Espana+Palma+de+Mallorca" target="_blank">🗺️ ניווט</a></div>
+<div class="rc"><div class="rt"><div class="rn">Forn des Teatre</div><span class="tag t4">🥐 מאפייה</span></div><div class="rtype">מאפייה | בוקר/נשנוש</div><div class="rdesc">ensaïmada – מאפה שקדים מיורקני. חובה לטעום. קפה זול ומצוין.</div><div class="rprice">💶 3-8€</div><div class="rkn">🥗 ✅ כל המאפים ללא בשר</div><a class="rnl" href="https://www.google.com/maps/search/Forn+des+Teatre+Palma" target="_blank">🗺️ ניווט</a></div>
+</div>
+</div></div>
+
+<!-- DAY 5 -->
+<div id="d5" class="tab-content"><div class="dw">
+<div class="dh"><div class="di">🇫🇷</div><div><h2>יום 5 – מרסיי</h2><div class="dm">שלישי, 4 אוגוסט | עגינה 09:00–18:00 | ~8 שעות</div></div></div>
+<div class="alert"><div class="at">⚠️ הנמל רחוק מהמרכז!</div>נמל מרסיי ~4ק"מ מהמרכז. תמיד מונית/אובר. חזרה לספינה עד 17:30.</div>
+<div class="tl">
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">09:30</div><div class="pl">יציאה לנמל הישן</div><div class="pe">Vieux-Port de Marseille</div><div class="ac">מיד לאובר/מונית. שוק דגים חי בבוקר – אחד המרהיבים בים התיכון.</div><div class="meta"><span class="tr tx">🚕 מונית/אובר</span><span class="di2">📍 ~15 דק' | ~15€</span><a class="nl" href="https://www.google.com/maps/place/Vieux-Port+de+Marseille" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">11:00</div><div class="pl">שכונת לה פנייה</div><div class="pe">Le Panier</div><div class="ac">הרובע הצבעוני והעתיק. גרפיטי אמנותי, חנויות בוטיק. ילדים אוהבים את האווירה.</div><div class="meta"><span class="tr tw">🚶 הליכה מהנמל</span><span class="di2">📍 ~8 דק' עלייה</span><a class="nl" href="https://www.google.com/maps/place/Le+Panier+Marseille" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">12:30</div><div class="pl">ארוחת צהריים – Chez Etienne</div><div class="pe">Lunch</div><div class="ac">פיצה מרסיי קיימת 50+ שנה. לא תיירותי בכלל. עממי ואמיתי.</div><div class="meta"><span class="tr tw">🚶 בלה פנייה</span><a class="nl" href="https://www.google.com/maps/search/Chez+Etienne+Marseille" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">14:00</div><div class="pl">נוטרדאם דה לה גארד</div><div class="pe">Notre-Dame de la Garde</div><div class="ac">נוף 360° על העיר, הים והנמל. כניסה חינם.</div><div class="meta"><span class="tr tx">🚕 מונית</span><span class="di2">📍 ~2ק"מ | ~8€</span><a class="nl" href="https://www.google.com/maps/place/Notre-Dame+de+la+Garde+Marseille" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div></div><div class="card"><div class="tm">16:30</div><div class="pl">חזרה לספינה</div><div class="pe">Back to Ship</div><div class="ac">מהנמל הישן לנמל הספינה – מונית בלבד.</div><div class="meta"><span class="tr tx">🚕 מונית/אובר</span><span class="di2">📍 ~15 דק' | ~15€</span><a class="nl" href="https://www.google.com/maps/place/Port+of+Marseille" target="_blank">🗺️ לנמל</a></div></div></div>
+</div>
+<div class="st">🍽️ מסעדות – מרסיי</div>
+<div class="rg">
+<div class="rc"><div class="rt"><div class="rn">Chez Etienne</div><span class="tag t1">⭐ מומלץ</span></div><div class="rtype">פיצה מרסיי | צהריים</div><div class="rdesc">מוסד 50+ שנה. פיצה עבה. הבעלים צבעוני. אמיתי ב-100%.</div><div class="rprice">💶 12-18€ לאדם</div><div class="rkn">🥗 פיצה מרגריטה/ירקות</div><a class="rnl" href="https://www.google.com/maps/search/Chez+Etienne+Marseille" target="_blank">🗺️ ניווט</a></div>
+<div class="rc"><div class="rt"><div class="rn">מסעדות הנמל הישן</div><span class="tag t3">🐟 דגים</span></div><div class="rtype">ים תיכוני | צהריים</div><div class="rdesc">Bouillabaisse – תבשיל דגים מפורסם של מרסיי. חוויה קולינרית אמיתית.</div><div class="rprice">💶 20-35€ לאדם</div><div class="rkn">🥗 ✅ דגים ופירות ים</div><a class="rnl" href="https://www.google.com/maps/place/Vieux-Port+de+Marseille" target="_blank">🗺️ ניווט</a></div>
+</div>
+</div></div>
+
+<!-- DAY 6 -->
+<div id="d6" class="tab-content"><div class="dw">
+<div class="dh"><div class="di">🌊</div><div><h2>יום 6 – יום ים</h2><div class="dm">רביעי, 5 אוגוסט | בדרך לרומא</div></div></div>
+<div class="sc"><h3>🌊 יום ים – מנוחה לפני רומא</h3><p>לא לתכנן כלום. לשחות, לאכול, לנוח.<br>מחר – היום הכי עמוס במסלול.</p><div class="sa"><div class="sai">🏊 בריכה</div><div class="sai">🎭 מופע ערב</div><div class="sai">🎮 מועדון ילדים</div><div class="sai">🧖 ספא</div></div></div>
+<div class="tip">⚠️ <strong>להכין מראש לרומא:</strong> לרכוש כרטיסי רכבת ציוויטווקיה–רומא ב-<strong>trenitalia.com</strong>. לא לחכות לתחנה.</div>
+</div></div>
+
+<!-- DAY 7 -->
+<div id="d7" class="tab-content"><div class="dw">
+<div class="dh"><div class="di">🏛️</div><div><h2>יום 7 – רומא</h2><div class="dm">חמישי, 6 אוגוסט | עגינה 07:00–20:00 | ציוויטווקיה → רומא</div></div></div>
+<div class="alert"><div class="at">🚂 לוגיסטיקה קריטית!</div>ציוויטווקיה → רומא = 65 דקות רכבת לכל כיוון.<br><strong>רכבת אחרונה בטוחה: 16:00 מרומא.</strong> אם תפספסו – מונית ~150€.</div>
+<div class="tl">
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">07:15</div><div class="pl">יציאה מהספינה</div><div class="pe">Port of Civitavecchia</div><div class="ac">ארוחת בוקר מהירה בספינה. לצאת מוקדם.</div><div class="meta"><span class="tr ts">🚐 שאטל לתחנה</span><span class="di2">📍 ~10 דק' | ~5-8€</span><a class="nl" href="https://www.google.com/maps/place/Civitavecchia+Railway+Station" target="_blank">🗺️ לתחנה</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">08:05</div><div class="pl">רכבת לרומא</div><div class="pe">Train to Roma Termini</div><div class="ac">רכבת ישירה 65 דקות. לרכוש מראש ב-trenitalia.com (~6-10€ לאדם).</div><div class="meta"><span class="tr tt">🚂 רכבת</span><span class="di2">📍 65 דק' | ~7€ לאדם</span><a class="nl" href="https://www.trenitalia.com" target="_blank">🛒 לרכוש</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">09:15</div><div class="pl">קולוסיאום</div><div class="pe">Colosseo</div><div class="ac">אמפיתאטרון ענק מ-70 לספירה. לפחות מבחוץ. כניסה ~18€.</div><div class="meta"><span class="tr tm2">🚇 מטרו B – Colosseo</span><span class="di2">📍 ~15 דק' מטרמיני</span><a class="nl" href="https://www.google.com/maps/place/Colosseum+Rome" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">10:30</div><div class="pl">פנתאון</div><div class="pe">Pantheon</div><div class="ac">מבנה שלם מ-125 לספירה. כיפה עם פתח – מרשים מאוד. כניסה ~5€.</div><div class="meta"><span class="tr tx">🚕 מונית</span><span class="di2">📍 ~15 דק' | ~12€</span><a class="nl" href="https://www.google.com/maps/place/Pantheon+Rome" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">11:15</div><div class="pl">מזרקת טרווי</div><div class="pe">Fontana di Trevi</div><div class="ac">המזרקה הכי מפורסמת בעולם. יש גידור ותשלום ~3€. לזרוק מטבע!</div><div class="meta"><span class="tr tw">🚶 הליכה</span><span class="di2">📍 ~10 דק' מהפנתאון</span><a class="nl" href="https://www.google.com/maps/place/Trevi+Fountain+Rome" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">12:30</div><div class="pl">ארוחת צהריים – Pizza Florida</div><div class="pe">Lunch</div><div class="ac">פיצה al taglio – לפי משקל. 5-7€ לאדם. מהיר ומדהים.</div><div class="meta"><span class="tr tw">🚶 הליכה</span><a class="nl" href="https://www.google.com/maps/search/Pizza+Florida+Rome" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">13:30</div><div class="pl">פיאצה נאבונה</div><div class="pe">Piazza Navona</div><div class="ac">כיכר בארוקית, שלושה מזרקות, אמנים, קפה. לשבת ולספוג את רומא.</div><div class="meta"><span class="tr tw">🚶 הליכה</span><span class="di2">📍 ~8 דק'</span><a class="nl" href="https://www.google.com/maps/place/Piazza+Navona+Rome" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div></div><div class="card"><div class="tm">15:00</div><div class="pl">⚠️ חזרה לרכבת!</div><div class="pe">Roma Termini → Civitavecchia</div><div class="ac">מונית לרומא טרמיני. רכבת 16:00 → ציוויטווקיה 17:05 → ספינה 18:00. לא לאחר!</div><div class="meta"><span class="tr tx">🚕 מונית</span><span class="di2">📍 ~15-20 דק' | ~15€</span><a class="nl" href="https://www.google.com/maps/place/Roma+Termini" target="_blank">🗺️ לטרמיני</a></div></div></div>
+</div>
+<div class="st">🍽️ מסעדות – רומא</div>
+<div class="rg">
+<div class="rc"><div class="rt"><div class="rn">Pizza Florida</div><span class="tag t1">⭐ חובה</span></div><div class="rtype">פיצה al taglio | צהריים מהיר</div><div class="rdesc">לפי משקל. הכי זול, הכי מהיר, הכי טעים.</div><div class="rprice">💶 5-8€ לאדם</div><div class="rkn">🥗 ✅ מרגריטה/ירקות – מושלם</div><a class="rnl" href="https://www.google.com/maps/search/Pizza+Florida+Rome" target="_blank">🗺️ ניווט</a></div>
+<div class="rc"><div class="rt"><div class="rn">Giolitti</div><span class="tag t4">🍦 גלידה</span></div><div class="rtype">ג'לטריה קלאסית מ-1890</div><div class="rdesc">קרוב לפנתאון. ג'לאטו איטלקי אמיתי – חובה לילדים.</div><div class="rprice">💶 3-5€</div><div class="rkn">🥗 ✅ גלידת פירות/שוקולד</div><a class="rnl" href="https://www.google.com/maps/search/Giolitti+gelateria+Rome" target="_blank">🗺️ ניווט</a></div>
+</div>
+</div></div>
+
+<!-- DAY 8 -->
+<div id="d8" class="tab-content"><div class="dw">
+<div class="dh"><div class="di">🍕</div><div><h2>יום 8 – נאפולי</h2><div class="dm">שישי, 7 אוגוסט | עגינה 07:00–19:00 | ~11 שעות</div></div></div>
+<div class="alert"><div class="at">⚠️ אזהרת ביטחון!</div>כייסים פעילים. <strong>תיקים קדימה, טלפון בכיס פנימי, לא לשים שום דבר על שולחן בחוץ.</strong></div>
+<div class="tl">
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">07:30</div><div class="pl">יציאה מהספינה</div><div class="pe">Port of Naples</div><div class="ac">הנמל במרכז העיר. הליכה קצרה לרוב האתרים.</div><div class="meta"><span class="tr tw">🚶 הליכה</span><a class="nl" href="https://www.google.com/maps/place/Port+of+Naples" target="_blank">🗺️ נמל נאפולי</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">08:00</div><div class="pl">ספאקנאפולי</div><div class="pe">Spaccanapoli</div><div class="ac">הרחוב שחוצה את נאפולי העתיקה. כנסיות, חנויות, ריחות, רעש – נאפולי האמיתית.</div><div class="meta"><span class="tr tw">🚶 הליכה</span><span class="di2">📍 ~20 דק' מהנמל</span><a class="nl" href="https://www.google.com/maps/place/Spaccanapoli+Naples" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">09:30</div><div class="pl">ויה סן גרגוריו ארמנו</div><div class="pe">Via San Gregorio Armeno</div><div class="ac">רחוב פסלי הנצרות המפורסם. חנויות ייחודיות. קניות מזכרות.</div><div class="meta"><span class="tr tw">🚶 הליכה</span><a class="nl" href="https://www.google.com/maps/place/Via+San+Gregorio+Armeno+Naples" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">12:00</div><div class="pl">L'Antica Pizzeria da Michele</div><div class="pe">The Most Famous Pizza in Naples</div><div class="ac">מ-1870. שתי פיצות בלבד. הפיצה שכולם מדברים עליה. ~5-7€ לפיצה. לצפות לתור.</div><div class="meta"><span class="tr tw">🚶 הליכה/מונית</span><a class="nl" href="https://www.google.com/maps/place/L'Antica+Pizzeria+da+Michele+Naples" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">14:00</div><div class="pl">קסטל דל אובו</div><div class="pe">Castel dell'Ovo</div><div class="ac">מבצר על סלע בים. כניסה חינם. נוף לווזוב. ילדים אוהבים לטפס.</div><div class="meta"><span class="tr tx">🚕 מונית</span><span class="di2">📍 ~15 דק' | ~8€</span><a class="nl" href="https://www.google.com/maps/place/Castel+dell'Ovo+Naples" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">15:30</div><div class="pl">טיילת נאפולי</div><div class="pe">Lungomare Caracciolo</div><div class="ac">רצועה לאורך הים עם נוף לווזוב. קפה, גלידה, מנוחה.</div><div class="meta"><span class="tr tw">🚶 הליכה מהמבצר</span><a class="nl" href="https://www.google.com/maps/place/Lungomare+Caracciolo+Naples" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div></div><div class="card"><div class="tm">17:30</div><div class="pl">חזרה לספינה</div><div class="pe">Back to Ship</div><div class="ac">מרווח ביטחון של 90 דקות.</div><div class="meta"><span class="tr tx">🚕 מונית</span><a class="nl" href="https://www.google.com/maps/place/Port+of+Naples" target="_blank">🗺️ לנמל</a></div></div></div>
+</div>
+<div class="st">🍽️ מסעדות – נאפולי</div>
+<div class="rg">
+<div class="rc"><div class="rt"><div class="rn">L'Antica Pizzeria da Michele</div><span class="tag t1">⭐ חובה מוחלטת</span></div><div class="rtype">פיצה נאפוליטנית מ-1870</div><div class="rdesc">שתי פיצות בלבד. ~5-7€ לפיצה שלמה. מוסד אגדי.</div><div class="rprice">💶 5-8€ לפיצה</div><div class="rkn">🥗 ✅ מרגריטה = עגבנייה+מוצרלה בלבד!</div><a class="rnl" href="https://www.google.com/maps/place/L'Antica+Pizzeria+da+Michele+Naples" target="_blank">🗺️ ניווט</a></div>
+<div class="rc"><div class="rt"><div class="rn">Scaturchio</div><span class="tag t4">🍰 קינוח</span></div><div class="rtype">קפה היסטורי מ-1905</div><div class="rdesc">sfogliatelle – מאפה נאפוליטני עם ריקוטה. חובה לטעום.</div><div class="rprice">💶 2-4€ למאפה</div><div class="rkn">🥗 ✅ מאפים ללא בשר</div><a class="rnl" href="https://www.google.com/maps/search/Scaturchio+Naples" target="_blank">🗺️ ניווט</a></div>
+</div>
+</div></div>
+
+<!-- DAY 9 -->
+<div id="d9" class="tab-content"><div class="dw">
+<div class="dh"><div class="di">🌊</div><div><h2>יום 9 – יום ים שני</h2><div class="dm">שבת, 8 אוגוסט | חזרה לברצלונה</div></div></div>
+<div class="sc"><h3>🌅 ערב האחרון בספינה</h3><p>הספינה בדרכה חזרה. מנוחה, בריכה, קניות.<br>בערב – ארוחת גאלה לסיום השיט. לבדוק קוד לבוש!</p><div class="sa"><div class="sai">🏊 בריכה</div><div class="sai">🛍️ קניות בספינה</div><div class="sai">🎭 ערב גאלה</div><div class="sai">🧳 אריזת מזוודות</div></div></div>
+<div class="tip">💡 <strong>לזכור:</strong> לשים מזוודות מחוץ לדלת לפי הוראות הספינה. תיק יד עם צרכי יום אחד.</div>
+</div></div>
+
+<!-- DAY 10 -->
+<div id="d10" class="tab-content"><div class="dw">
+<div class="dh"><div class="di">🛍️</div><div><h2>יום 10 – ברצלונה אחרי השיט</h2><div class="dm">ראשון, 9 אוגוסט | מלון רגינה | פלאסה קטלוניה</div></div></div>
+<div class="tl">
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">09:00</div><div class="pl">ירידה מהספינה</div><div class="pe">Barcelona Cruise Port</div><div class="ac">הירידה יכולה לאחר 30-60 דקות. לא למהר.</div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">10:30</div><div class="pl">מלון רגינה</div><div class="pe">Hotel Regina | Plaça de Catalunya</div><div class="ac">צ'ק אין או השארת מזוודות. ממש על פלאסה קטלוניה.</div><div class="meta"><span class="tr tp">🚐 מיניוואן פרטי</span><span class="di2">📍 ~15 דק' | ~70€</span><a class="nl" href="https://www.google.com/maps/search/Hotel+Regina+Barcelona+Placa+Catalunya" target="_blank">🗺️ מיקום</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">11:30</div><div class="pl">פלאסה קטלוניה + El Corte Inglés</div><div class="pe">Plaça de Catalunya</div><div class="ac">קניות, מזכרות, קומת אוכל מצוינת.</div><div class="meta"><span class="tr tw">🚶 ממש ליד המלון</span><a class="nl" href="https://www.google.com/maps/place/El+Corte+Ingles+Barcelona+Cataluna" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">16:00</div><div class="pl">שער הניצחון + פארק ציטדלה</div><div class="pe">Arc de Triomf + Parc de la Ciutadella</div><div class="ac">טיול ערב רגוע. שער מרשים לצילומים, פארק עם אגם קטן.</div><div class="meta"><span class="tr tw">🚶 הליכה</span><span class="di2">📍 ~20 דק'</span><a class="nl" href="https://www.google.com/maps/place/Arc+de+Triomf+Barcelona" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div></div><div class="card"><div class="tm">20:00</div><div class="pl">ארוחת ערב אחרונה – Viana Barcelona</div><div class="pe">Last Dinner</div><div class="ac">ספרדי מודרני. ארוחת סיום ראויה לטיול מצוין.</div><div class="meta"><span class="tr tw">🚶 הליכה מהמלון</span><a class="nl" href="https://www.google.com/maps/search/Viana+Barcelona+restaurant" target="_blank">🗺️ ניווט</a></div></div></div>
+</div>
+<div class="st">🍽️ מסעדות – יום 10</div>
+<div class="rg">
+<div class="rc"><div class="rt"><div class="rn">El Corte Inglés – קומת אוכל</div><span class="tag t4">🛒 נוח</span></div><div class="rtype">מרכז קניות | צהריים</div><div class="rdesc">פיצה, סושי, ספרדי, סלטים. מגוון לקבוצה, ממוזג, נוח.</div><div class="rprice">💶 10-18€ לאדם</div><div class="rkn">🥗 ✅ ירקות, דגים, גבינות</div><a class="rnl" href="https://www.google.com/maps/place/El+Corte+Ingles+Barcelona+Cataluna" target="_blank">🗺️ ניווט</a></div>
+<div class="rc"><div class="rt"><div class="rn">Viana Barcelona</div><span class="tag t1">🥂 ארוחת סיום</span></div><div class="rtype">ספרדי מודרני | ערב</div><div class="rdesc">ארוחת ערב אחרונה ראויה לטיול מצוין.</div><div class="rprice">💶 30-45€ לאדם</div><div class="rkn">🥗 מנות דגים, סלטים</div><a class="rnl" href="https://www.google.com/maps/search/Viana+Barcelona+restaurant" target="_blank">🗺️ ניווט</a></div>
+</div>
+</div></div>
+
+<!-- DAY 11 -->
+<div id="d11" class="tab-content"><div class="dw">
+<div class="dh"><div class="di">🏠</div><div><h2>יום 11 – יום הטיסה</h2><div class="dm">שני, 10 אוגוסט | טיסה 22:35 → ישראל 11.08 03:40</div></div></div>
+<div class="tip">✈️ <strong>טיסה ב-22:35 – יש לכם יום שלם!</strong> לא להתרחק יותר מ-15-20 דקות מהמלון.</div>
+<div class="tl">
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">09:00</div><div class="pl">ארוחת בוקר – Faborit</div><div class="pe">Last Breakfast</div><div class="ac">קפה ברצלוני נחמד קרוב לפלאסה.</div><div class="meta"><span class="tr tw">🚶 הליכה</span><a class="nl" href="https://www.google.com/maps/search/Faborit+cafe+Barcelona+Placa+Catalunya" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">10:00</div><div class="pl">קניות אחרונות</div><div class="pe">Last Shopping</div><div class="ac">שוקולד, מגנטים. רק באזור פלאסה קטלוניה / רמבלה.</div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">13:00</div><div class="pl">ארוחת צהריים – El Nacional</div><div class="pe">Lunch</div><div class="ac">מתחם אוכל ספרדי ב-Passeig de Gràcia. כל אחד לוקח מה שרוצה.</div><div class="meta"><span class="tr tw">🚶 הליכה</span><a class="nl" href="https://www.google.com/maps/search/El+Nacional+Barcelona" target="_blank">🗺️ ניווט</a></div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div><div class="ln"></div></div><div class="card"><div class="tm">14:30</div><div class="pl">איסוף מזוודות וצ'ק אאוט</div><div class="pe">Check Out</div><div class="ac">לאסוף מזוודות, לוודא שכולם מוכנים.</div></div></div>
+<div class="ti2"><div class="dc"><div class="dot"></div></div><div class="card"><div class="tm">19:00</div><div class="pl">נסיעה לשדה התעופה</div><div class="pe">Barcelona Airport</div><div class="ac">3.5 שעות לפני הטיסה. מרווח ביטחון לתורים.</div><div class="meta"><span class="tr tp">🚐 מיניוואן פרטי</span><span class="di2">📍 ~30-40 דק' | ~70€</span><a class="nl" href="https://www.google.com/maps/place/Barcelona+El+Prat+Airport" target="_blank">🗺️ לשדה</a></div></div></div>
+</div>
+</div></div>
+
+<!-- INFO -->
+<div id="inf" class="tab-content"><div class="dw">
+<div class="dh"><div class="di">📋</div><div><h2>מידע כללי ועלויות</h2><div class="dm">טיסות | מלונות | עלויות | רשימת משימות</div></div></div>
+
+<div class="st">✈️ פרטי טיסות</div>
+<div class="fc"><div class="fi">🛫</div><div class="fd"><h4>אל על | הלוך | 31.07.26</h4><p>המראה: 05:45 | נחיתה: 09:25 ברצלונה<br>קלאסי: טרול 8ק"ג + מזוודה 23ק"ג | $810 מבוגר | $749 ילד עד 12<br>אל על פרוטקט: $35 לאדם (ביטול עד 48 שעות)</p></div></div>
+<div class="fc"><div class="fi">🛬</div><div class="fd"><h4>אל על | חזור | 10.08.26</h4><p>המראה: 22:35 ברצלונה | נחיתה: 03:40 (11.08) ישראל</p></div></div>
+
+<div class="st">🏨 מלונות</div>
+<div class="sum"><table><thead><tr><th>מלון</th><th>תאריכים</th><th>לינה בלבד</th><th>עם ב"ב</th></tr></thead><tbody>
+<tr><td><strong>לאונרדו לאס רמבלס</strong></td><td>31.07–02.08</td><td>786€ (~914$)</td><td>898€ (~1,044$)</td></tr>
+<tr><td><strong>מלון רגינה</strong></td><td>09.08–10.08</td><td>450€ (~523$)</td><td>539€ (~627$)</td></tr>
+</tbody></table></div>
+
+<div class="st">🚐 העברות</div>
+<div class="sum"><table><thead><tr><th>מסלול</th><th>תאריך</th><th>עלות</th></tr></thead><tbody>
+<tr><td>שדה → מלון לאונרדו</td><td>31.07</td><td>~70€</td></tr>
+<tr><td>מלון לאונרדו → נמל</td><td>02.08</td><td>~70€</td></tr>
+<tr><td>נמל → מלון רגינה</td><td>09.08</td><td>~70€</td></tr>
+<tr><td>מלון רגינה → שדה</td><td>10.08</td><td>~70€</td></tr>
+</tbody></table></div>
+
+<div class="st">💰 עלויות סה"כ</div>
+<div class="sum"><table><thead><tr><th>פריט</th><th>עלות</th></tr></thead><tbody>
+<tr><td>מלון לאונרדו לינה בלבד</td><td>786€ (~914$)</td></tr>
+<tr><td>מלון רגינה לינה בלבד</td><td>450€ (~523$)</td></tr>
+<tr><td>4 העברות מיניוואן</td><td>280€ (~326$)</td></tr>
+</tbody></table>
+<div class="pt">סה"כ לינה בלבד + העברות + טיסות = ~4,948$</div>
+<div class="pt" style="background:#1a7fa3;margin-top:8px">עם ארוחות בוקר = ~5,182$</div>
+</div>
+
+<div class="st">✅ רשימת משימות</div>
+<div class="cl">
+<label class="ci"><input type="checkbox" onchange="tc(this)"> 🎟️ כרטיסים לסגרדה פמיליה</label>
+<label class="ci"><input type="checkbox" onchange="tc(this)"> 🎟️ כרטיסים לפארק גואל</label>
+<label class="ci"><input type="checkbox" onchange="tc(this)"> 🚂 כרטיסי רכבת ציוויטווקיה–רומא</label>
+<label class="ci"><input type="checkbox" onchange="tc(this)"> 🏛️ שקלו הזמנת קולוסיאום</label>
+<label class="ci"><input type="checkbox" onchange="tc(this)"> 📱 אפליקציית Trenitalia</label>
+<label class="ci"><input type="checkbox" onchange="tc(this)"> 📱 מפות אופליין לספרד/צרפת/איטליה</label>
+<label class="ci"><input type="checkbox" onchange="tc(this)"> 💶 מזומן 100-150€ לאדם</label>
+<label class="ci"><input type="checkbox" onchange="tc(this)"> 🏥 ביטוח נסיעות</label>
+<label class="ci"><input type="checkbox" onchange="tc(this)"> 🌡️ קרם הגנה SPF 50+</label>
+<label class="ci"><input type="checkbox" onchange="tc(this)"> 👝 חבר: תיק קדימה בנאפולי!</label>
+<label class="ci"><input type="checkbox" onchange="tc(this)"> 💊 תרופות בסיסיות</label>
+<label class="ci"><input type="checkbox" onchange="tc(this)"> 📋 מסמכי ביטוח ואשראי</label>
+</div>
+
+<div class="st" style="margin-top:26px">💡 טיפים חשובים</div>
+<div class="sum"><table><thead><tr><th>נושא</th><th>המלצה</th></tr></thead><tbody>
+<tr><td>⏰ חזרה לספינה</td><td>שעה לפחות לפני ההפלגה</td></tr>
+<tr><td>🚂 רומא</td><td>רכבת 16:00 חזרה – לא 17:10</td></tr>
+<tr><td>🚕 מרסיי</td><td>מונית תמיד – הנמל רחוק</td></tr>
+<tr><td>👝 נאפולי</td><td>תיקים קדימה, טלפון בכיס</td></tr>
+<tr><td>🌡️ חום</td><td>אוגוסט חם – לצאת מוקדם, הרבה מים</td></tr>
+<tr><td>🕍 חבר צמחוני</td><td>בכל מסעדה יש דגים/גבינות – לשאול מלצר</td></tr>
+<tr><td>👨‍👩‍👧‍👦 ילדים</td><td>גלידה אחרי כל אתר – "שוחד" מוצלח</td></tr>
+</tbody></table></div>
+</div></div>
+
+<script>
+function st(id,btn){
+  document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
+  document.querySelectorAll('.tb').forEach(b=>b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+  btn.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+}
+function tc(el){el.closest('.ci').classList.toggle('chk',el.checked)}
+</script>
+</body>
+</html>
